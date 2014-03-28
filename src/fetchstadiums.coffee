@@ -76,8 +76,8 @@ processStadium = (url) ->
 						lat   : stadiums[s].lat
 						long  : stadiums[s].long
 
-			fs.writeFileSync "ballparks.json", JSON.stringify(stadiums)
-			fs.writeFileSync "teams.json", JSON.stringify(teams)
+			fs.writeFileSync "data/ballparks.json", JSON.stringify(stadiums)
+			fs.writeFileSync "data/teams.json", JSON.stringify(teams)
 
 connect "en.wikipedia.org", "/wiki/List_of_Major_League_Baseball_stadiums", (body, path) ->
 	lines = body.toString()

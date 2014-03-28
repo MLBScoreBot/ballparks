@@ -72,8 +72,8 @@
             };
           }
         }
-        fs.writeFileSync("ballparks.json", JSON.stringify(stadiums));
-        return fs.writeFileSync("teams.json", JSON.stringify(teams));
+        fs.writeFileSync("data/ballparks.json", JSON.stringify(stadiums));
+        return fs.writeFileSync("data/teams.json", JSON.stringify(teams));
       }
     });
   };
