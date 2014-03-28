@@ -26,13 +26,24 @@ Example team record:
 
 ### Fetching over HTTP ###
 
-If you need the park name as a key, just make a GET request to `https://raw.github.com/mlbscorebot/ballparks/master/ballparks.json`, parse the JSON, and go.
+If you need the park name as a key, just make a GET request to `https://raw.github.com/mlbscorebot/ballparks/master/data/ballparks.json`, parse the JSON, and go.
 
-If you want keys to be the home team, make a GET request to `https://raw.github.com/mlbscorebot/ballparks/master/teams.json` to get the data.
+If you want keys to be the home team, make a GET request to `https://raw.github.com/mlbscorebot/ballparks/master/data/teams.json` to get the data.
 
 ### Building the Data File ###
 
-Simple! Just run `node fetchstadiums.js` and you've got shiny new `ballparks.json` and `teams.json` files.
+	npm install && node bin/fetchstadiums.js
+
+### Hacking on the Code ###
+
+You'll need to first grab some dependencies:
+
+	sudo npm install -g oven-build
+	npm install
+
+Then, build the source with:
+
+	oven build
 
 ### Legal ###
 
