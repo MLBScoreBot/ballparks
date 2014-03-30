@@ -1,0 +1,26 @@
+{
+	"name": "ballparks",
+	"description": "A listing of MLB stadiums in JSON form, plus code to generate it",
+	"author": {
+		"name":"David Pearson",
+		"url":"http://dpearson.me"
+	},
+	"repository": {
+		"type":"git",
+		"url":"https://github.com/mlbscorebot/ballparks.git"
+	},
+	"version": "0.0.1",
+	"dependencies": {
+	},
+	"devDependencies": {
+		"coffee-script": "1.7.x"
+	},
+	"engines": {
+		"node": "0.10.x",
+		"npm": "1.4.x"
+	},
+	"directories": {
+		"bin": "./bin"
+	},
+	"main": "./bin/fetchstadiums.js"
+}
