@@ -32,14 +32,13 @@ If you want keys to be the home team, make a GET request to `https://raw.github.
 
 ### Building the Data File ###
 
-	npm install && node bin/fetchstadiums.js
+	node bin/fetchstadiums.js
 
 ### Hacking on the Code ###
 
 You'll need to first grab some dependencies:
 
 	sudo npm install -g oven-build
-	npm install
 
 Then, build the source with:
 
